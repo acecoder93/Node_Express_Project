@@ -1,0 +1,34 @@
+{
+    "cryptocurrency": [{
+        "name" : "Bitcoin",
+        "abbreviation" : "BTC",
+        "summary" : "Bitcoin was the first cryptocurrency that came to market and it is the largest. It gained traction when it was utilized for the deepweb. There will only be 21 million Bitcoins that are produced. The majority of these coins have already been mined by users. Since there is a limited supply of Bitcoin that is available, if the demand for the coin increases, then the price of the respective coin will increase. Compared to other coins, Bitcoin is easier to liquidate due to its popularity. Related to is popularity and ease of access, many stores have begun to accept Bitcoin as a form of payment relative to other currencies.",
+        "cons" : "As mentioned in the summary, Bitcoin was utilized on Silk Road as a form of payment since it was not trackable. Due to this reason, people associate it with crime and thus affects the coin's overall reputation and adoption by users. In addition, since it was the first coin to come out, many of the other coins that have entered the market afterwards are newer and further advanced, which place Bitcoin at a disadvantage.",
+        "website" : "https://bitcoin.org/en/",
+        "logo" : "/images/bitcoin_logo.png"
+    },
+    {
+        "name" : "Ethereum",
+        "abbreviation" : "ETH",
+        "summary" : "Ethereum is a platform that allows for users to develop dApps, tokens, and smart contracts.",
+        "cons" : "Ethereum does not have a limited supply, and due to this there are many more ethereum coins out there compared to Bitcoin. Bitcoin's value or price is based upon its supply. ",
+        "website" : "https://www.ethereum.org/",
+        "logo" : "/images/ethereum_logo.png"
+    },
+    {
+        "name" : "Ripple",
+        "abbreviation" : "XRP",
+        "summary" : "Blockchain that is designed by banks to make their payments faster. Ripply has many partnerships with banks and governments around the world.",
+        "cons" : "Unlike other cryptocurrencies, Ripple isn't decentralized",
+        "website" : "https://ripple.com/",
+        "logo" : "/images/ripple_logo.webp"
+    },
+    {
+        "name" : "Litecoin",
+        "abbreviation" : "LTC",
+        "summary" : "Litecoin is a fork based off of Bitcoin, which has different features. It is the first cryptocurrency to utilize the Lightning Network. The Lightning Network solves issues pertaining to scalability. In addition, Lietcoine is able to process many more transactions per second compared to other blockchains. Overall, it is cheaper and faste than Bitcoin.",
+        "cons" : "As Litecoin is a fork and has the feature of the Lightning Network, it does not have a real competitive advantage if Bitcoin is able to solve its problem to offer cheaper and faster transactions. This is the only current differentiating factor.",
+        "website" : "https://litecoin.org/",
+        "logo" :  "/images/litecoin_logo.png"
+    }
+    ]}
