@@ -1,7 +1,9 @@
 <div id = "nav">Cryptocurrency & Blockchain</div>
+    <div class="parallax"></div>
+
       <% data.forEach((item)=>{%>
-        <h3><%= item.name%> (<%= item.abbreviation %>)</h3>
-        <a href="#"><img src="<%= item.logo %>"></a>
+        <h3><%= item.name%> (<%= item.abbreviation %>) <a href="#"><img src="<%= item.logo %>"></a></h3>
+        
         <a href="https://www.reddit.com/r/<%=item.name%>">Reddit</a>
         <a href="https://coinmarketcap.com/currencies/<%= item.name%>">Coinmarket Cap</a>
         <a href="<%= item.website%>">Website</a>
