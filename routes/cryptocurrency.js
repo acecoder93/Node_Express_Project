@@ -13,6 +13,7 @@ var data = require('../data/data.json')
 // });
 
 
+// router.get('/cryptocurrency/:cryptoID', (req, res)=>{
 router.get('/cryptocurrency/:cryptoID', (req, res)=>{
     var cryptID = data.cryptocurrency[req.param('cryptoID')];
     var cryptJSON = JSON.stringify(cryptID);
@@ -25,10 +26,14 @@ router.get('/cryptocurrency/:cryptoID', (req, res)=>{
     // ${cryptocurrency.cons}
     // `
     res.render('cryptocurrency',{
-        name : cryptID
+        name : cryptID.name,
+        logo : cryptID.logo,
+        summary : cryptID.summary,
+        cons : cryptID.cons,
         
-
-
+        
+        
+    
 
     });
 
