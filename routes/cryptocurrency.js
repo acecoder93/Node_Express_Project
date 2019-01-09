@@ -7,9 +7,11 @@ router.get('/cryptocurrency/:cryptoID', (req, res)=>{
 
     res.render('cryptocurrency',{
         name : cryptID.name,
+        abbreviation : cryptID.abbreviation,
         logo : cryptID.logo,
         summary : cryptID.summary,
         cons : cryptID.cons,
+        website: cryptID.website
     });
 
 })
