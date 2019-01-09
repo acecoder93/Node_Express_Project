@@ -3,9 +3,15 @@
 const express = require('express');
 const app = express();
 
+// Setting up body-parser for form
+const body_parser = require('body-parser');
+
+
 // Setting up View Engine
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+
+
 
 
 // Setting up Routers
