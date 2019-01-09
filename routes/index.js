@@ -1,16 +1,17 @@
 const express = require('express');
 const router = express.Router();
+var data = require('../data/data.json')
+
 
 
 var html = "";
 router.get('/', (req, res)=>{
-    html = `
 
-    <a href = "/cryptocurrency"> Click here </a>
+    var cryptData = data.cryptocurrency;
 
-
-    `
-    res.send (html);
+    res.render('index', {
+        data: cryptData
+    })
 })
 
 module.exports = router;
