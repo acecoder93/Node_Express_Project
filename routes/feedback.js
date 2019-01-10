@@ -16,6 +16,7 @@ router.post('/feedback', (req, res)=>{
     var phoneNumber = req.body.number;
     var comments = req.body.comments;
 
+    // console.log(`${name} ${email} ${phoneNumber} ${comments}`);
     res.send(`${name} ${email} ${phoneNumber} ${comments}`);
 
 })

@@ -3,12 +3,8 @@
 
 
 @media (min-width: 300px){
-    #nav {
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-        height: 10%;
-    }
+ 
+
 
     .parallax { 
         /* The image used */
@@ -38,7 +34,8 @@
     }
 
     #parallax-text{
-        font-size: 20px;
+        font-size: 40px;
+        font-weight: 900;
         color: white;
         display: flex;
         flex-direction: row;
