@@ -1,15 +1,21 @@
 
 $(function(){
-    $.getJSON('api', updateFeedback);
 
-    $('form-feedback').submit(function(e){
+    $.getJSON('api', updateFeedback);
+    
+
+    $('#form-feedback').submit(function(e){
         e.preventDefault();
+        console.log('in the feedback.js')
+
         $.post('api', {
             name: $('#form-name').val(),
             email: $('#form-email').val(),
             phoneNumber: $('#form-number').val(),
             comments: $('#form-comments').val()
         }, updateFeedback);
+
+        alert('form data changed');
     })
 
     function updateFeedback(data){
@@ -21,4 +27,4 @@ $(function(){
 
         $('#feedback').html(output);
     }
-});
+})

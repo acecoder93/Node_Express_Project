@@ -19,6 +19,7 @@ router.use(body_parser.json());
 router.use(body_parser.urlencoded({ extended: false}));
 
 router.post('/api', function(req,res){
+    console.log(req.body);
     data.unshift(req.body);
     fs.writeFile('app/data/feedback.json', JSON.stringify(data), 'utf8', (err)=>{
         if (err){
