@@ -3,8 +3,8 @@
 const express = require('express');
 const app = express();
 
-// Setting up body-parser for form
-const body_parser = require('body-parser');
+// Setting up body-parser for form/ Have commented out as it may not be needed for app.js file
+// const body_parser = require('body-parser');
 
 
 // Setting up View Engine
