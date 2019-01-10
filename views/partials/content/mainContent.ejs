@@ -1,11 +1,20 @@
 <!-- <div id = "nav">Cryptocurrency & Blockchain</div> -->
     <div class="parallax">
         <div id = "parallax-overlay">
-            <p id = "parallax-text">Cryptocurrency & Blockchain</p>
+            <p id = "parallax-text">
+                Cryptocurrency & Blockchain
+                    <nav class="nav justify-content-center">
+                            <a class="nav-link active textWhite" style = "border-left: solid black 1px" href="./cryptocurrency/0">Bitcoin</a>
+                            <a class="nav-link active textWhite" style = "border-left: solid black 1px" href="./cryptocurrency/1">Ethereum</a>
+                            <a class="nav-link active textWhite" style = "border-left: solid black 1px" href="./cryptocurrency/2">Ripple</a>
+                            <a class="nav-link active textWhite" style = "border-left: solid black 1px; border-right: solid black 1px;" href="./cryptocurrency/3">Litecoin</a>
+                            <a class="nav-link active textWhite" style = "border-left: solid black 1px; border-right: solid black 1px;" href="./feedback/">Feedback</a>
+                        </nav>
+                </p>
         </div>
     </div>
 
-      <% data.forEach((item)=>{%>
+    <% data.forEach((item)=>{%>
         <h3><%= item.name%> (<%= item.abbreviation %>) <a href="#"><img src="<%= item.logo %>"></a></h3>
         
         <a href="https://www.reddit.com/r/<%=item.name%>">Reddit</a>
