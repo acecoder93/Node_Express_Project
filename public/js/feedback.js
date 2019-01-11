@@ -6,7 +6,6 @@ $(function(){
 
     $('#form-feedback').submit(function(e){
         e.preventDefault();
-        console.log('in the feedback.js')
 
         $.post('api', {
             name: $('#form-name').val(),
@@ -17,6 +16,7 @@ $(function(){
 
         alert('form data changed');
     })
+
 
     function updateFeedback(data){
         var output = '';
