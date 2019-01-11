@@ -1,8 +1,12 @@
 
 $(function(){
-
-    $.getJSON('api', updateFeedback);
+//     $(function(){
+//     $.getJSON('api', updateFeedback);
+//     console.log('hello world');
+// });
     
+
+$.getJSON('/api', updateFeedback);
 
     $('#form-feedback').submit(function(e){
         e.preventDefault();
@@ -15,7 +19,7 @@ $(function(){
         }, updateFeedback);
 
         alert('form data changed');
-    })
+    });
 
     // $('#feedback').on('click', function(e){
     //     if (e.target.className) == 'glyphicon glyphicon-remove-circle'){
@@ -37,7 +41,11 @@ $(function(){
 
         $('#feedback').html(output);
     }
-})
+}
+
+
+)
+
 
 
 

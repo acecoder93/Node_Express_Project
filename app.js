@@ -12,8 +12,6 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 
-
-
 // Setting up Routers
 app.use(express.static('public'));
 app.use(require('./routes/index.js'))
