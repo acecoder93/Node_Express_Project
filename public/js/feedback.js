@@ -17,6 +17,16 @@ $(function(){
         alert('form data changed');
     })
 
+    // $('#feedback').on('click', function(e){
+    //     if (e.target.className) == 'glyphicon glyphicon-remove-circle'){
+    //         $.ajax({
+    //             url: 'api/' + e.target.id,
+    //             type: 'DELETE',
+    //             success: updateFeedback
+    //         })
+    //     }
+    // })
+
 
     function updateFeedback(data){
         var output = '';
@@ -28,3 +38,8 @@ $(function(){
         $('#feedback').html(output);
     }
 })
+
+
+
+
+
