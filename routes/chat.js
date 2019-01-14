@@ -3,15 +3,8 @@ const router = express.Router();
 var data = require('../data/data.json')
 
 
-router.get('/chat',(req,res) => {
-    
-    res.render('chat',{
-        dataTest : data,
-    })
-})
-
 router.get('/chat', (req, res)=>{
-    res.sendFile('./views/chat.ejs');
+    res.render('/Users/anujsaheba/DigitalCrafts/Node_Express_Project/views/chat.ejs');
 });
 
 module.exports = router;

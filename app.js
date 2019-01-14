@@ -3,11 +3,8 @@
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
-var io = require('socket.io').listen(http);
+var io = require('socket.io')(http);
 
-
-// Setting up body-parser for form/ Have commented out as it may not be needed for app.js file
-// const body_parser = require('body-parser');
 
 
 // Setting up View Engine
@@ -31,6 +28,6 @@ app.use(require('./routes/chat.js'))
         })
     });
 
-app.listen(5000, ()=>{
+http.listen(5000, ()=>{
     console.log('Listening on port 5000')
 });
