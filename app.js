@@ -6,7 +6,6 @@ const http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 
-
 // Setting up View Engine
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -22,11 +21,11 @@ app.use(require('./routes/chat.js'))
 
 
 // Socket Setup (Chat Engine);
-    io.on('connection', (socket)=>{
-        socket.on('chat message', (msg)=>{
-            io.emit('chat', msg);
-        })
-    });
+io.on('connection', (socket)=>{
+    socket.on('chat message', (msg)=>{
+        io.emit('chat', msg);
+    })
+});
 
 http.listen(5000, ()=>{
     console.log('Listening on port 5000')
