@@ -12,25 +12,24 @@ $.getJSON('/api', updateFeedback);
         e.preventDefault();
 
         $.post('/api', {
-            name: $('#form-name').val(),
-            email: $('#form-email').val(),
-            phoneNumber: $('#form-number').val(),
-            comments: $('#form-comments').val()
+            name: $('#feedback-form-name').val(),
+            email: $('#feedback-form-email').val(),
+            phoneNumber: $('#feedback-form-phoneNumber').val(),
+            comments: $('#feedback-form-comment').val()
         }, updateFeedback);
 
         alert('form data changed');
     });
 
-
-    $('#feedback').on('click', function(e) {
-        if (e.target.className == 'remove-button'){
-            $.ajax({
+    $('.feedback-messages').on('click', function(e) {
+        if (e.target.className == 'glyphicon glyphicon-remove') {
+          $.ajax({
             url: 'api/' + e.target.id,
             type: 'DELETE',
             success: updateFeedback
           }); //ajax
         } // the target is a delete button
-    });
+    }); //feedback messages
 
 
 
@@ -38,15 +37,17 @@ $.getJSON('/api', updateFeedback);
         var output = '';
         $.each(data,function(key,item){
 
-            output += ' <div id = "main div">';
-            output += ' <div id = "button_header">';
-            output += ' <button class = "remove-button">' + key + '</button>';
-            output += ' <div id = "content">' + item.name + item.email + item.phoneNumber + item.comments;
-            output += ' </div>';
-            output += ' </div>';
-            output += ' </div>';
-
-
+            output += '     <div class="feedback-item item-list media-list">';
+            output += '       <div class="feedback-item media">';
+            output += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><span id="' + key + '" class="glyphicon glyphicon-remove"></span></button></div>';
+            output += '         <div class="feedback-info media-body">';
+            output += '           <div class="feedback-head">';
+            output += '             <div class="feedback-title">' + item.name + ' <small class="feedback-name label label-info">' + item.email + item.phoneNumber + '</small></div>';
+            output += '           </div>';
+            output += '           <div class="feedback-message">' + item.comments + '</div>';
+            output += '         </div>';
+            output += '       </div>';
+            output += '     </div>';
 
             // output += '     <div class="feedback-item item-list media-list">';
             // output += '       <div class="feedback-item media">';
