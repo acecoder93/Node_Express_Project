@@ -1,4 +1,101 @@
-img{
-    height: 15px;
-    width: 15px;
+
+@media (min-width: 300px){
+
+    img{
+        height: 15px;
+        width: 15px;
+    }
+    
+
+    .parallax { 
+        /* The image used */
+        background-image: url(/images/crypto.jpg);;
+    
+        /* Set a specific height */
+        height: 500px; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #parallax-overlay {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.801);
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        border-radius: 5%;
+    }
+
+    #parallax-text{
+        font-size: 50px;
+        font-weight: 900;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        margin-bottom: 0px;
+    }
+
+    
+    a {
+        color: white
+    }
+    a:hover {
+        color: white
+    }
+
+    nav {
+        background-color: gray;
+    }
+    
+    img{
+        height: 25px;
+        width: 25px;
+    }
+
+    h3{
+        padding-top: 15px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center; 
+    }
+
+    h4, h2, p, a {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+    
+
+    #cons {
+        padding-bottom: 10px;
+        border-bottom: solid black 1px;
+    }
+
+    /* Google Font Applied */
+
+    #nav, #parallax-text, h4, h3, p, a {
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    
+
+
+
+    
+
+
+
+
+
+
 }

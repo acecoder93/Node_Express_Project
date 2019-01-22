@@ -8,48 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
 
-          <div class="container">
-              <div class="row">
-                <div class="col-sm-4">
-                  <h1 class="feedback-form-title">Send us feedback</h1>
-                  <form class="feedback-form">
-                    <div class="form-group">
-                      <label for="feedback-form-name">Name</label>
-                      <input type="text" class="form-control" id="feedback-form-name" placeholder="Enter your name">
-                    </div>
-        
-                    <div class="form-group">
-                      <label for="feedback-form-email">Email</label>
-                      <input type="text" class="form-control" id="feedback-form-email" placeholder="Email Address">
-                    </div>
-        
-                   
-                    <div class="form-group">
-                        <label for="feedback-form-phoneNumber">Phone Number</label>
-                        <textarea type="text" placeholder="Enter your phone number"  class="form-control" id="feedback-form-phoneNumber"></textarea>
-                    </div>
+      <%include partials/content/otherPageContent.ejs %>
 
-                    <div class="form-group">
-                        <label for="feedback-form-comment">Comments</label>
-                        <textarea type="text" placeholder="Enter your comment, then hit the submit"  class="form-control" id="feedback-form-comment" rows="6"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-default pull-right">Submit</button>
-
-
-      </form>
-
-      <div id = "feedback">Feedback Messages</div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src = "/js/feedback.js"></script>

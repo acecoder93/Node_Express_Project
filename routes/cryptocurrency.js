@@ -3,7 +3,7 @@ const router = express.Router();
 var data = require('../data/data.json')
 
 router.get('/cryptocurrency/:cryptoID', (req, res)=>{
-    var cryptID = data.cryptocurrency[req.param('cryptoID')];
+    var cryptID = data.cryptocurrency[req.params('cryptoID')];
 
     res.render('cryptocurrency',{
         name : cryptID.name,

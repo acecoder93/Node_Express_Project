@@ -1,11 +1,6 @@
 
-
-
-
 @media (min-width: 300px){
  
-
-
     .parallax { 
         /* The image used */
         background-image: url(/images/crypto.jpg);;
@@ -65,8 +60,7 @@
         padding-top: 15px;
         padding-left: 10px;
         display: flex;
-        justify-content: center;
-        
+        justify-content: center; 
     }
 
     h4, h2, p, a {
